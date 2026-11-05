@@ -1,0 +1,17 @@
+enable
+configure terminal
+hostname Protocol7
+interface FastEthernet0/0
+ ip address 192.236.7.66 255.255.255.252
+ no shutdown
+interface FastEthernet0/1
+ ip address 192.236.7.1 255.255.255.192
+ no shutdown
+interface FastEthernet1/0
+ ip address 192.236.7.137 255.255.255.252
+ no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 192.236.7.65
+ip route 192.236.7.128 255.255.255.128 192.236.7.138
+end
+write memory

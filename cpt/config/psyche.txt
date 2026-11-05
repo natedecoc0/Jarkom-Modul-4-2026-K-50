@@ -1,0 +1,13 @@
+enable
+configure terminal
+hostname Psyche
+interface FastEthernet0/0
+ ip address 192.236.8.130 255.255.255.248
+ no shutdown
+interface FastEthernet0/1
+ ip address 192.236.24.1 255.255.252.0
+ no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 192.236.8.129
+end
+write memory

@@ -1,0 +1,17 @@
+enable
+configure terminal
+hostname Deus
+interface FastEthernet0/0
+ ip address 192.236.6.134 255.255.255.252
+ no shutdown
+interface FastEthernet0/1
+ ip address 192.236.6.1 255.255.255.128
+ no shutdown
+interface FastEthernet1/0
+ ip address 192.236.7.65 255.255.255.252
+ no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 192.236.6.133
+ip route 192.236.7.0 255.255.255.0 192.236.7.66
+end
+write memory

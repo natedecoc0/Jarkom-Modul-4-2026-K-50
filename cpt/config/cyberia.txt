@@ -1,0 +1,13 @@
+enable
+configure terminal
+hostname Cyberia
+interface FastEthernet0/1
+ ip address 192.236.8.1 255.255.255.128
+ no shutdown
+interface FastEthernet1/0
+ ip address 192.236.8.137 255.255.255.252
+ no shutdown
+exit
+ip route 192.236.0.0 255.255.224.0 192.236.8.138
+end
+write memory
