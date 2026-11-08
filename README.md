@@ -84,6 +84,9 @@ Total jumlah IP = 2814. Setelah tiap subnet dibulatkan ke ukuran blok (pangkat 2
 
 Alokasi berakhir di `192.236.16.91`. Total alamat terpakai 4188 dari 8192 di dalam blok induk `192.236.0.0/19`, tanpa celah antar subnet.
 
+<img width="4329" height="1624" alt="image" src="https://github.com/user-attachments/assets/1779624c-0bb3-4ff3-89f9-ef244d843a27" />
+
+
 #### 5. Rancangan routing
 
 | Router | Jumlah route statis spesifik | Default route via |
